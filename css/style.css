@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url("../images/bg.jpeg"); 
+    background-size: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+.docker-logo{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+
+.wel{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 96px;
+    position: absolute;
+    top: 30%;
+    right: 7%;
+    color: #099cec;
+}
+
+.dock{
+    position: absolute;
+    top: 42%;
+    right: 7%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20pt;
+    color: white;
+}
+
+.btn{
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    padding: 10px 100px;
+    text-align: justify;
+    align-content:space-around;
+    color: #099cec;
+}
+
+.btn-outline-primary{
+    border: 1px solid #099cec;
+}
+
+.btn-outline-primary:hover{
+    background-color:#099cec
+}

@@ -1,0 +1,45 @@
+
+body {
+  background: linear-gradient(45deg, #30b0ec 0%,#1f7cd3 100%);
+  font-family: 'Ubuntu';
+}
+
+.container{
+    display: flex;
+}
+
+.terminal{
+    width: 70%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.terminal-main{
+    height: 40vh;
+    background-color: black;
+    transform: translate(-50%,50%);
+}
+.terminal-bar{
+    font-size: small;
+    background: rgb(29, 49, 228);
+    transform: translate(-50%,50%);
+    top: 21%;
+    text-align: center;
+}
+
+.host{
+    color: lime;
+}
+
+.output{
+    color: white;
+    width: 70%;
+    overflow: hidden;
+    background: none;
+    outline: none;
+    border: none;
+    font-style: 'Ubuntu';
+    font-size: 15px;
+}

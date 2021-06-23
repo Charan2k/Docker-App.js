@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/terminal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="js/terminal.js"></script>
+    <title>Docker | Portal</title>
+</head>
+<body>
+    <div class="containers">
+        <div class="command-buttons">
+            <button class="btn images" onclick="showImages()">
+                Show Images
+            </button>
+            <button class="btn containers" onclick="showContainers()">
+                Show Containers
+            </button>
+            <button class="btn deleteImg">
+                Delete an Image
+            </button>
+            <button class="btn deleteCont">
+                Delete a Container
+            </button>
+        </div>
+        <div class="terminal terminal-main">
+            <div class="commands">
+                <span class="host">
+                    docker-console $
+                </span>
+                <input type="text" class="output" id="output" onkeypress="hehe()">
+            </div>
+        </div>
+        <div class="terminal terminal-bar">
+            Docker Web
+        </div>
+    </div>
+</body>
+</html>
