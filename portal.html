@@ -13,30 +13,49 @@
 </head>
 <body>
     <div class="containers">
+        <div class="terminal title-bar">
+            Docker Web
+        </div>
         <div class="command-buttons">
-            <button class="btn images" onclick="showImages()">
-                Show Images
-            </button>
-            <button class="btn containers" onclick="showContainers()">
-                Show Containers
-            </button>
-            <button class="btn deleteImg">
-                Delete an Image
-            </button>
-            <button class="btn deleteCont">
-                Delete a Container
-            </button>
+            <div class="box1">
+                <button class="btn images" onclick="showImages()">
+                    Show Images
+                </button>
+                <button class="btn containers" onclick="showContainers()">
+                    Show Containers
+                </button>
+            </div>
+            <input type="text" id="imgname" placeholder="image name" class="inputbox">
+            <div class="box2">
+                <button class="btn deleteImg" onclick="downloadImage()">
+                    Download an Image
+                </button>
+                <button class="btn deleteImg" onclick="deleteImage()">
+                    Delete an Image
+                </button>
+            </div>
+            <div class="box3">
+                <input type="text" id="cimgname" placeholder="image name" class="inputbox">
+                <input type="text" id="contname" placeholder="container name/id name" class="inputbox">
+                <button class="btn deleteCont" onclick="runContainer()">
+                    Launch a Container
+                </button>
+                <button class="btn deleteCont" onclick="delContainer()">
+                    Delete a Container
+                </button>
+            </div>
         </div>
         <div class="terminal terminal-main">
             <div class="commands">
                 <span class="host">
                     docker-console $
                 </span>
-                <input type="text" class="output" id="output" onkeypress="hehe()">
+                <!-- <input type="text" class="output" id="output" onkeypress="hehe()"> -->
+                <pre>
+                    <div class="output" id="output" onkeypress="hehe()">
+                    </div>
+                </pre>
             </div>
-        </div>
-        <div class="terminal terminal-bar">
-            Docker Web
         </div>
     </div>
 </body>
